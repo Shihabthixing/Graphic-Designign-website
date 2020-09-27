@@ -187,7 +187,7 @@ span{
 
 .about-text p{
     line-height: 25px;
-    font-size: 14px;
+    font-size: 15px;
     max-width: 65%;
     text-align: center;
     margin: 0px auto;
@@ -238,7 +238,7 @@ span{
     flex-wrap: wrap;
 }
 .services .col{
-    width: 250px;
+    width: 350px;
     margin: 0px auto;
     text-align: center;
     border: none;
@@ -454,7 +454,7 @@ span{
 .fab{
     margin: 50px 25px;
     font-size: 25px;
-    color: #74a7db;
+    color: #ffffff;
 }
 
 
