@@ -1,0 +1,750 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    letter-spacing: 1px;
+    font-family: montserrat;
+    margin: 0px ;
+    padding: 0px;
+}
+p{
+    font-size: 14px;
+}
+
+/* --------------------- HADER ----------------- */
+
+header{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+}
+.logo-container img{
+    width: 130px;
+    padding-left: 35px;
+
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-right: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.fixed{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #000000;
+    z-index: 3;
+}
+section{
+    padding: 0px 0px;
+    height: 100%;
+    position: relative; 
+}
+
+
+/* <!------------------- HOME ----------- -->  */
+
+
+.home{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./Web\ Mockup.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #34495e;
+    background-attachment: fixed;
+    z-index: -1;
+
+}
+.name{
+    max-width: 600px;
+    text-align: left;
+    padding: 15% 0px 12% 0px;
+    text-align: center;
+    
+}
+
+.name h1{
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 3px;
+}
+.name p{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px; 
+    padding: 10px 5px;
+    width: 100%;
+    letter-spacing: 8px;
+
+} 
+
+span{
+    margin: 15px 5px 20px 0px;
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    display: inline-block;
+}
+.homeBtn,.homeBtnTwo{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none; 
+    border: none;
+    background: #1de7eea4;
+    margin-right: 15px;
+    color: white;
+}
+.homeBtn{
+    border: 1px solid white;
+    background: transparent;
+    
+}
+
+/* <!------------------- ABOUT ----------- -->  */
+
+.section-title{
+    text-align: center;
+    margin: 50px 0px;
+}
+.section-title h2{
+    font-size: 30px;
+    border-bottom: 2px solid #069284 ;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #09b3a2;
+}
+
+.about-text{
+    text-align: center;
+    width: 90%;
+    padding: 25px 0px;
+    margin: 15px auto;
+}
+
+.about-text p{
+    line-height: 25px;
+    font-size: 14px;
+    max-width: 65%;
+    text-align: center;
+    margin: 0px auto;
+}
+.about-text .downloadbtn{
+    background: linear-gradient( to right, #f00974, #0aceba);
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 45px ;
+    margin-bottom: 45px;
+}
+.row1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col{
+    border: 1px solid #696969;
+    padding: 30px 20px ;
+    margin: 15px 15px;
+    width: 200px;
+}
+.col span{
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+    color: #038175;
+}
+.col h6{
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+/* <!------------------- SERVICES   ----------- -->  */
+
+.services{
+    width: 60%;
+    margin: 0px auto;
+    padding: 25px 0px;
+}
+.services .row2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services .col{
+    width: 250px;
+    margin: 0px auto;
+    text-align: center;
+    border: none;
+}
+.col img{
+    width: 65px;
+    padding: 15px 0px;
+}
+.col h3{
+    padding: 20px 0px ;
+    font-size: 20px;
+    font-weight: 500;
+}
+.col p{
+    font-weight: 400;
+    line-height: 23px;
+}
+
+/* <!------------------- GALLERY  ----------- -->  */
+
+.row3{
+    width: 70%;
+    margin: 0px auto;
+    padding: 50px 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.row3 .col{
+    border: none;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.row3 .col img{
+    width: 250px;
+    padding: 10px;
+}
+
+/* <!------------------- CONTACT  ----------- -->  */
+
+.form_section{
+    margin: 0px auto;
+    width: 50%;
+    text-align: center;
+}
+.textField {
+    width: 100%;
+    outline: none;
+    border-style: none;
+    border: 2px solid #81818131;
+    padding: 20px;
+    margin-top: 15px;
+}
+#texarea{
+    width: 100%;
+    outline: none;
+    border-style: none;
+    border: 2px solid #81818131;
+    padding: 20px;
+    margin: 15px 0px;
+    
+}
+.submit{
+    width: 100%;
+    background: linear-gradient(90deg, #ca0f6900 0%,  #ca0f68 45%,#038174 55%, #03817400 100%  );
+    color: white;
+    font-size: 14px;
+    outline: none;
+    border-style: none;
+    height: 40px;
+    margin-left: 25px;
+}
+
+/* <!------------------- FOOTER  ----------- -->  */
+
+
+
+.footer-section{
+    width: 100%;
+    height: auto;
+    background: url(./Web\ Mockup\ Footer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 50px;
+    overflow: hidden;
+
+}
+.row4{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+.colum1,.colum4 {
+    width: 300px;
+    padding: 10px;
+    color: white;
+}
+.colum1 {
+    margin-right: 25px;
+}
+
+.colum2 {
+    width: 180px;
+    padding: 10px 0px 10px 20px;
+    color: white;
+}
+
+.colum3 {
+    width: 180px;
+    padding: 10px 0px 10px 20px;
+    color: white;
+}
+
+.footerlogo{
+    padding: 60px 0px;
+}
+.footerlogo img{
+    width: 130px;
+}
+.aboutUs-section h3{
+    padding-bottom: 40px;
+    font-weight: 500;
+}
+.aboutUs-section p{
+    margin-bottom: 20px;
+}
+
+.aboutUs-section, .contact-sction h3{
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.aboutUs-section p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+.contact-sction h3{
+    font-weight: 400;
+}
+
+.fas{
+    margin: 7px 18px 7px 0px;
+}
+.colum2 ,.colum3,.colum4{
+    margin: 80px 0px;
+}
+
+
+
+.colum2 h3 ,.colum3 h3,.colum4 h3{
+    margin-top: 80px;
+    font-size: 22px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    padding-bottom: 40px;
+    font-size: 22px;
+}
+
+.colum2 p ,.colum3,.colum3 p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+
+.colum4 .email{
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ffffff ;
+    color: rgb(255, 255, 255);
+    margin: 10px 0px 10px;
+    text-align: left;
+    background: transparent;
+}
+.colum4 .email::placeholder{
+    color: rgba(255, 255, 255, 0.521);
+}
+
+.submitBtnFooter{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin: 20px 0px;
+    text-align: center;
+    background: rgb(10, 182, 165) ;
+}
+
+
+
+/* <!------------------- SOCIAL MEDIA SECTION ----------- -->  */
+
+.croseline{
+    width: 95%;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+}
+
+
+.fab{
+    margin: 50px 25px;
+    font-size: 25px;
+    color: #74a7db;
+}
+
+
+/* <!------------------- JQEURY ----------- -->  */
+
+@media (max-width: 950px){
+    
+
+    .logo-container img{
+        width: 100px;
+        padding: 0px;
+    }
+  
+    .name h1{
+        font-size: 35px;
+        margin-top: 25px;
+        width: 100%;
+    }
+    .name p{
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 5px; 
+        padding: 10px 0px;
+        width: 100%;
+        letter-spacing: 4px;
+    
+    } 
+    
+    span{
+        margin: 5px 10px 15px 10px;
+        border-radius: 10px;
+        width: 5px;
+        height: 5px;
+    }
+    .homeBtn,.homeBtnTwo{
+        width: 110px;
+        height: 35px;
+        border-radius: 12px;
+        outline: none; 
+        border: none;
+        background: #1de7eea4;
+        margin-right: 15px;
+        color: white;
+    }
+    .homeBtn{
+        border: 1px solid white;
+        background: transparent;
+        
+    }
+    .about-text{
+    text-align: center;
+    width: 90%;
+    padding: 25px 0px;
+    margin: 15px auto;
+}
+
+.about-text p{
+    line-height: 25px;
+    font-size: 14px;
+    max-width: 65%;
+    text-align: center;
+    margin: 0px auto;
+}
+.about-text .downloadbtn{
+    background: linear-gradient( to right, #f00974, #0aceba);
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 45px ;
+    margin-bottom: 45px;
+}
+.row1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col{
+    border: 1px solid #696969;
+    padding: 30px 20px ;
+    margin: 15px 15px;
+    width: 200px;
+}
+.col span{
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+    color: #038175;
+}
+.col h6{
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+/* ------ ABOUT US --------  */
+
+.section-title{
+    margin: 20px 0px;
+}
+.section-title h2{
+    font-size: 20px;
+}
+.about-text{
+    padding: 0px 10px;
+}
+
+.about-text p{
+    font-size: 12px;
+    max-width: 100%;
+    line-height: 17px;
+}
+.about-text .downloadbtn{
+    padding: 15px 25px;
+    margin-top: 25px ;
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+
+.col{
+    border: 1px solid #696969;
+    padding: 10px 10px ;
+    margin: 15px 15px;
+    width: 100%;
+    font-size: 14px;
+}
+.col span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* <!------------------- SERVICES   ----------- -->  */
+
+.services{
+    width: 100%;
+    padding: 10px 0px;
+}
+.services .row2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services .col{
+    width: 100%;
+    padding: 10px 20px;
+}
+.col img{
+    width: 50px;
+    padding: 5px 0px;
+}
+.col h3{
+    padding: 20px 0px ;
+    font-size: 16px;
+    font-weight: 500;
+}
+.col p{
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* <!------------------- GALLERY  ----------- -->  */
+
+.row3{
+    width: 100%;
+    padding: 0px 0px;
+}
+
+.row3 .col img{
+    width: 100%;
+    padding: 0px;
+}
+
+/* <!------------------- CONTACT  ----------- -->  */
+
+.form_section{
+    width: 90%;
+    padding: 0px 10px;
+    text-align: center;
+}
+.textField {
+    width: 95%;
+    border: 1px solid #81818131;
+    padding: 10px;
+    margin-top: 15px;
+}
+#texarea{
+    width: 100%;
+    border: 1px solid #81818131;
+    padding: 20px 0px;
+    margin: 15px 0px;
+    
+}
+.submit{
+    width: 100%;
+    font-size: 12px;
+    border-style: none;
+    height: 30px;
+    margin-left: 0px;
+}
+
+
+/* <!------------------- FOOTER  ----------- -->  */
+
+
+.row4{
+    width: 100%;
+}
+.colum1,.colum4 {
+    width: 100%;
+    padding: 0px 20px;
+    text-align: left;
+}
+.colum1 {
+    margin-right: 0px;
+}
+
+.colum2 {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.colum3 {
+    width: 100%;
+    padding: 0px 20px;
+    color: white;
+}
+
+.footerlogo{
+    padding: 25px 0px;
+}
+.footerlogo img{
+    width: 110px;
+}
+.aboutUs-section h3{
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+.aboutUs-section p{
+    margin-bottom: 15px;
+}
+
+
+.colum2 ,.colum3,.colum4{
+    margin: 0px;
+}
+
+.colum2 h3 ,.colum3 h3,.colum4 h3{
+    margin-top: 40px;
+    font-size: 20px;
+    padding-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.colum4 .email{
+    width: 100%;
+    height: 30px;
+    padding: 0px 0px;
+    border-bottom: 1px solid #ffffffbe ;
+    text-align: left;
+    background: transparent;
+}
+.colum4 .email::placeholder{
+    color: rgba(255, 255, 255, 0.521);
+    font-size: 11px;
+}
+
+.submitBtnFooter{
+    padding: 10px 20px;
+    margin: 15px 0px 35px;
+}
+
+
+
+/* <!------------------- SOCIAL MEDIA SECTION ----------- -->  */
+
+.croseline{
+    width: 100%;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+}
+
+
+.fab{
+    margin: 20px 25px;
+    font-size: 15px;
+    color: white ;
+}
+
+}
