@@ -21,7 +21,11 @@
         <div class="logo-container">
             <img src="./Logo red & White.png" alt="">
         </div>
+<<<<<<< HEAD
         <ul class="sml-menu"> 
+=======
+        <ul> 
+>>>>>>> 853bbfb4ae725f131efb4c6544af50dacef3e5f1
             <li>
                 <a href="#home" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s" > Home</a>
                 <a href="#about" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.1s" > About</a>
@@ -251,6 +255,7 @@
     <script>
         new WOW().init();
 
+<<<<<<< HEAD
      
            $(document).ready(function(){
                
@@ -274,6 +279,18 @@
         
     </script>
     
+=======
+        $(document).scroll(function(){
+            var header = $("header");
+            if($(window).scrollTop() >= 100){
+                header.addClass("header");
+            }
+            else{
+                header.removeClass("header");
+            }
+        })
+    </script>
+>>>>>>> 853bbfb4ae725f131efb4c6544af50dacef3e5f1
 
 </body>
 </html>
