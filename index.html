@@ -22,17 +22,17 @@
         <div class="logo-container">
             <img src="./Logo red & White.png" alt="">
                                                             <!-- btn menu  -->
-            <div class="wraper">
-                <div class="circle icones">
-                    <div class="line top"></div>
-                    <div class="line middle"></div>
-                    <div class="line bottom"></div>
+            <div id="menu-bar">
+                <div id="menu">
+                    <div id="top"     class="line"></div>
+                    <div id="middle"  class="line"></div>
+                    <div id="bottom"  class="line"></div>
                 </div>
             </div>
 
         </div>
         <ul id="mobMenu"> 
-            <li>
+            <li >
                 <a href="#home" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s" > Home</a>
                 <a href="#about" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.1s" > About</a>
                 <a href="#services" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.2s"> Services</a>
@@ -254,7 +254,7 @@
 
 <!------------------- JAVASCRIPT    ----------- -->
 
-
+<script src="./javaScript.js"></script>
 <script src="./jQuery/jquery-3.5.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
@@ -267,9 +267,10 @@
                
                $(window).scroll(function(){
 
+
                     var top = $(window).scrollTop();
 
-                        if (top >= 750){
+                        if (top >= 700){
                             $(".fixed").show("slow");
                         }
                             else
@@ -280,15 +281,27 @@
 
 
     </script>
-    <script>
+    
 
-           $(document).ready(function(){
-               $(".wraper").click(function(){
-                   $(".icones").toggleClass("close");
-               });
-           });
+    // <!-- <script>
+    //     $(document).ready(function(){
+    //         $(".wrapper").click(function(){
 
-    </script>
+    //             if ($.toggleClass("close")){
+                    
+    //                     $.toggleClass("close"),
+    //                     $.toggleClass("icones"),
+    //                     $.toggleClass("mobMenu")
+    //             }
+    //             else 
+    //                 {   
+    //                     $.toggleClass("menuHide"),  }
+                
+
+    //            });     
+
+    //     });
+    // </script> -->
     
 
 </body>
