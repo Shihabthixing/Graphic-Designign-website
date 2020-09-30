@@ -48,9 +48,6 @@ table {
     padding: 0px;
     scroll-behavior: smooth;
 }
-p{
-    font-size: 14px;
-}
 
 /* --------------------- HADER ----------------- */
 
@@ -121,6 +118,7 @@ section{
     background-position: center;
     background-color: #34495e;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     z-index: -1;
 
 }
@@ -145,30 +143,31 @@ section{
     color: white;
     font-size: 15px;
     font-weight: 300;
-    margin-top: 10px; 
+    margin: 25px 0px 15px 0px; 
     padding: 10px 5px;
     width: 100%;
-    letter-spacing: 8px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
 
 } 
 
-span{
-    margin: 15px 5px 20px 0px;
-    border-radius: 10px;
-    width: 10px;
-    height: 10px;
-    background: white;
-    display: inline-block;
-}
 .homeBtn,.homeBtnTwo{
-    padding: 10px 20px;
-    border-radius: 25px;
+    width: 110px;
+    height: 35px;
+    border-radius: 12px;
     outline: none; 
     border: none;
     background: #1de7eea4;
     margin-right: 15px;
     color: white;
 }
+
+.homeBtn{
+    border: 1px solid white;
+    background: transparent;
+    
+}
+
 
 
 
@@ -189,7 +188,6 @@ span{
 #about{
     transition: 0.5s ease-in;
 }
-
 .about-text{
     text-align: center;
     width: 90%;
@@ -203,6 +201,7 @@ span{
     max-width: 65%;
     text-align: center;
     margin: 0px auto;
+    
 }
 .about-text .downloadbtn{
     background: linear-gradient( to right, #f00974, #0aceba);
@@ -213,7 +212,9 @@ span{
     display: inline-block;
     margin-top: 45px ;
     margin-bottom: 45px;
+    transition: .2s ease-in-out;
 }
+
 .row1{
     width: 100%;
     display: flex;
@@ -225,23 +226,38 @@ span{
     padding: 30px 20px ;
     margin: 15px 15px;
     width: 200px;
+    border-radius: 5px;
 }
-.col span{
+
+.effect:hover.col{
+    background: linear-gradient( to right, #f00974, #0aceba);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+
+.col {
     display: inline;
     font-size: 20px;
     font-weight: 500;
-    color: #038175;
+    color: #006157;
 }
 .col h6{
     font-weight: 400;
+    font-size: 14px;
     line-height: 20px;
-    margin-top: 15px;
+    margin-top: 20px;
+    
 }
 
 /* <!------------------- SERVICES   ----------- -->  */
 
 .services{
-    width: 60%;
+    width: 80%;
     margin: 0px auto;
     padding: 25px 0px;
 }
@@ -250,23 +266,29 @@ span{
     flex-wrap: wrap;
 }
 .services .col{
-    width: 350px;
+    width: 380px;
     margin: 0px auto;
     text-align: center;
     border: none;
 }
+.services .col:hover img{
+    transform: scale(1.3);
+    transition: .5s ease-in-out ;
+}
 .col img{
     width: 65px;
     padding: 15px 0px;
+    padding: 15px 25px;
 }
 .col h3{
     padding: 20px 0px ;
-    font-size: 20px;
     font-weight: 500;
 }
 .col p{
+    width: 100%;
     font-weight: 400;
     line-height: 23px;
+    font-size: 14px;
 }
 
 /* <!------------------- GALLERY  ----------- -->  */
@@ -285,11 +307,10 @@ span{
 }
 .gallery-section h2{
     display: none;
-
 }
 
 .row3{
-    width: 70%;
+    width: 80%;
     margin: 0px auto;
     padding: 50px 5px;
     display: flex;
@@ -299,15 +320,14 @@ span{
 .row3 .col{
     border: none;
     width: 250px;
-    padding: 10px;
-    margin: 20px;
+    padding: 5px 5px;
+    margin: 5px;
     text-align: center;
     margin: 0px auto;
 }
 
 .row3 .col img{
-    width: 250px;
-    padding: 10px;
+    width: 100%;
 }
 
 /* <!------------------- CONTACT  ----------- -->  */
@@ -489,9 +509,9 @@ span{
 
 /* <!------------------- JQEURY ----------- -->  */
 
-@media (max-width: 950px){ 
+@media (max-width: 850px){ 
 
-
+   
     /*--------------- SCROLL MENU ---------------- */
     .header{
         padding: 0px;
@@ -509,7 +529,7 @@ span{
         box-sizing: border-box;
         position: relative;
         right: -100%;
-         transition: 0.3s ease; 
+        transition: 0.3s ease; 
     }
     
     hr{
@@ -536,15 +556,27 @@ span{
         letter-spacing: 3px;
         
     }
-
-     /*--------------- CLICK MENU FUNTION ---------------- */
     
+    /*--------------- LOGO ---------------- */
+
     .logo-container{
         width: 100%;
+        height: 80px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
+
+    .logo-container img{
+        width: 120px;
+        
+    }
+  
+        
+    
+    /*--------------- CLICK MENU FUNTION ---------------- */
+
 
     #menu{
         width: 35px;
@@ -589,78 +621,35 @@ span{
         right: 0%;
     }
 
-
-
-
-    /* .circle{
-        background: white ;
-        border-radius: 50px;
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        right: 25px;
-        top: 12px ;
-        cursor: pointer;
-    }
-
-    .line {
-        width: 20px;
-        height: 3px;
-        background: rgb(7, 158, 163);
-        margin-left: 20%;
-        border-radius: 5px;
-        position: relative;
-        transition: all cubic-bezier(0.26, 0.1, 0.2 7, 1.55) 0.35s;
-    }
-    .top{
-        top: 30%;
-    }
-    .middle{
-       top: 38%;
-    }
-    .bottom{
-        top: 46%;
-    }
-
-    .icones.close .top{
-        transform: rotate(45deg);
-        top: 45% ;
-    }
-    .icones.close .bottom{
-        transform: rotate(-45deg);
-        top: 38%;
-    }
-    .icones.close .middle{
-        display: none;
-    } */
-
-    
-
-    /*--------------- LOGO ---------------- */
-
-
-    .logo-container img{
-        width: 100px;
-        padding: 25px 25px 10px 25px;
-    }
-  
     /*--------------- HOME ---------------- */
+
+    .home{
+        height: 70vh;
+        background: url(./Web\ Mockup\ for\ mob.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        z-index: -1;
+    
+    }
+
     .fixed{
         opacity: 0;
     }
-
+  
     .name h1{
-        font-size: 35px;
-        margin-top: 25px;
-        width: 100%;
+        font-size: 45px;
+        line-height: 55px;
     }
     .name p{
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 300;
-        margin-top: 5px; 
+        margin-top: 15px; 
         padding: 10px 0px;
         width: 100%;
-        letter-spacing: 4px;
+        letter-spacing: 5px;
+        line-height: 22px;
     
     } 
     
@@ -677,7 +666,7 @@ span{
         outline: none; 
         border: none;
         background: #1de7eea4;
-        margin-right: 15px;
+        margin-right: 10px;
         color: white;
     }
 
@@ -691,19 +680,21 @@ span{
 
 
     .about-text{
-    text-align: center;
-    width: 90%;
-    padding: 25px 0px;
+    width: 95%;
+    padding: 0px 10px;
     margin: 15px auto;
     }
 
     .about-text p{
     line-height: 25px;
     font-size: 14px;
-    max-width: 65%;
-    text-align: center;
+    width: 100%;
+    text-align: justify;
     margin: 0px auto;
+    color: rgb(136, 136, 136);
+    letter-spacing: 0px;
     }
+
     .about-text .downloadbtn{
     background: linear-gradient( to right, #f00974, #0aceba);
     padding: 15px 25px;
@@ -714,18 +705,14 @@ span{
     margin-top: 45px ;
     margin-bottom: 45px;
     }
+
     .row1{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     }
-    .col{
-    border: 1px solid #696969;
-    padding: 30px 20px ;
-    margin: 15px 15px;
-    width: 200px;
-    }
+    
     .col span{
     display: inline;
     font-size: 20px;
@@ -736,6 +723,8 @@ span{
     font-weight: 400;
     line-height: 20px;
     margin-top: 15px;
+    color: rgb(136, 136, 136);
+    letter-spacing: 0px;
     }
 
 /* ------ ABOUT COLOUMS --------  */
@@ -766,7 +755,7 @@ span{
 .col{
     border: 1px solid #696969;
     padding: 10px 10px ;
-    margin: 15px 15px;
+    margin: 15px 0px;
     width: 100%;
     font-size: 14px;
 }
@@ -778,6 +767,19 @@ span{
 
 /* <!------------------- SERVICES   ----------- -->  */
 
+.gallery-section{
+    width: 100%;
+    height: 350px;
+    background-color: red;
+    background: url(./my\ photo\ for\ mobile\ devise.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: top;
+    
+}
+
 .services{
     width: 100%;
     padding: 10px 0px;
@@ -788,34 +790,41 @@ span{
 }
 .services .col{
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 5px;
 }
 .col img{
     width: 50px;
     padding: 5px 0px;
 }
 .col h3{
-    padding: 20px 0px ;
+    padding: 20px 10px ;
     font-size: 16px;
     font-weight: 500;
 }
 .col p{
-    font-weight: 400;
+    font-weight: 300;
     line-height: 20px;
+    font-size: 14px;
 }
+
+
 
 /* <!------------------- GALLERY  ----------- -->  */
 
 .row3{
     width: 100%;
-    padding: 0px 0px;
+    padding: 50px 0px;
+}
+.row3 .col{
+    border: none;
+    width: 420px;
+    text-align: center;
+    margin: 0px auto;
 }
 
 .row3 .col img{
     width: 100%;
-    padding: 0px;
 }
-
 /* <!------------------- CONTACT  ----------- -->  */
 
 .form_section{
